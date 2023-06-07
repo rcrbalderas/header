@@ -1,0 +1,170 @@
+/* global styles, reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus,
+button:active {
+  outline: none; 
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* header top styles */
+.header__top {
+    background-color: #133c8a;
+    text-align: center;
+}
+
+.header__logo {
+    padding: 20px 15px 5px 15px;
+    text-align: center;
+}
+
+.header__logo img {
+    width: 300px;
+}
+
+.header__top-menu {
+    padding: 5px 15px;
+}
+
+.header__top-menu ul {
+    list-style: none;
+    padding: 7px 0;
+}
+
+.header__top-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header__top-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.header__top-menu ul li a {
+    font: 400 12px/22px 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* header bottom styles */
+.header__phone {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.header__phone a {
+    color: #1c1e1f;
+    font: 15px/24px 'Roboto', sans-serif;
+    font-weight: 700;
+    position: relative;
+    padding-left: 25px;
+}
+
+.header__phone a::before {
+    content: url('../../images/phone-logo.png');
+    position: absolute;
+    left: 0;
+    top: 0;;
+}
+
+.header__bottom-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__bottom-menu {
+    text-align: center;
+}
+
+.header__bottom-menu nav ul li {
+    text-align: left;
+    display: block;
+    background-color: #133c8a;
+    position: relative;
+}
+
+.header__bottom-menu nav ul li a {
+    font: 16px/40px 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    padding-left: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.header__bottom-menu nav ul.submenu li a {
+    border-bottom: 1px solid #234c9b;
+}
+
+.header__bottom-menu .submenu li a {
+    padding-left: 35px;
+ }
+
+/* mobile nav, button styles */
+.mobile-nav-button {
+    background-color: #133c8a;
+    border: none;
+    cursor: pointer;
+    padding: 9px 6px;
+    outline: none;
+    display: block;
+    margin: 10px auto 10px;
+  }
+  
+  .icon-bar {
+    display: block;
+    background-color: #fff;
+    margin: 4px 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .nav-menu.open {
+    display: block;
+  }
+
+  .nav-menu ul.submenu {
+    overflow: hidden;
+    max-height: 0;
+    z-index: 2;
+  }
+
+  .nav-menu ul.submenu.active {
+    max-height: 100%;
+  }
+
+  .nav-menu ul.submenu li a {
+    font-size: 14px;
+  }
+
+  .svg-icon {
+    fill: white;
+  }
